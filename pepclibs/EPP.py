@@ -174,7 +174,8 @@ class EPP(_EPBase.EPBase):
         """Refer to '_EPBase._validate_value()'."""
 
         if Trivial.is_int(val):
-            Trivial.validate_value_in_range(int(val), _EPP_MIN, _EPP_MAX, what="EPP value")
+            Trivial.validate_value_in_range(Trivial.str_to_int(val, what="EPP value"), _EPP_MIN,
+                                            _EPP_MAX, what="EPP value")
         elif not policy_ok:
             raise ErrorNotSupported(f"EPP value must be an integer within [{_EPP_MIN},{_EPP_MAX}]")
         else:

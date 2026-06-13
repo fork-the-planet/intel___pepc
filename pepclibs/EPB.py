@@ -136,7 +136,8 @@ class EPB(_EPBase.EPBase):
         """Refer to '_EPBase._validate_value()'."""
 
         if Trivial.is_int(val):
-            Trivial.validate_value_in_range(int(val), _EPB_MIN, _EPB_MAX, what="EPB value")
+            Trivial.validate_value_in_range(Trivial.str_to_int(val, what="EPB value"), _EPB_MIN,
+                                            _EPB_MAX, what="EPB value")
         elif not policy_ok:
             raise ErrorNotSupported(f"EPB value must be an integer within [{_EPB_MIN},{_EPB_MAX}]")
         elif val not in EPB_POLICY_NAMES:

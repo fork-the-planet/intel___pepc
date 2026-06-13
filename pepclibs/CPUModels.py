@@ -952,7 +952,7 @@ def parse_user_vfm(user_vfm: str) -> CPUModelTypedDict:
 
     if Trivial.is_int(user_vfm):
         # Assume this is already a VFM integer.
-        return get_model_dict_by_vfm(int(user_vfm))
+        return get_model_dict_by_vfm(Trivial.str_to_int(user_vfm, what="CPU VFM"))
 
     # Assume that this is a CPU model in '[<Vendor>]:<Family>:<Model>' format.
     split = user_vfm.split(":")
@@ -963,7 +963,7 @@ def parse_user_vfm(user_vfm: str) -> CPUModelTypedDict:
     if len(split) == 3:
         # Vendor is specified. It can be either name or ID.
         if Trivial.is_int(split[0]):
-            vendor = int(split[0])
+            vendor = Trivial.str_to_int(split[0], what="CPU vendor")
             vendor_name = vendor_id_to_name(vendor)
         else:
             vendor_name = split[0]

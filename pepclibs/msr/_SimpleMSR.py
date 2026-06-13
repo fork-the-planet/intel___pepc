@@ -167,7 +167,8 @@ class SimpleMSR(ClassHelpers.SimpleCloseContext):
             if not Trivial.is_int(orig_bits[0]) or not Trivial.is_int(orig_bits[1]):
                 raise Error(f"Bad bits range '{bits}', must be a sequence of 2 integers")
 
-            bits = (int(orig_bits[0]), int(orig_bits[1]))
+            bits = (Trivial.str_to_int(orig_bits[0], what="most significant bit"),
+                    Trivial.str_to_int(orig_bits[1], what="least significant bit"))
 
             if bits[0] < bits[1]:
                 raise Error(f"Bad bits range ({bits[0]}, {bits[1]}), the first number must be "
