@@ -25,7 +25,7 @@ Naming conventions:
              per-core, per-package, etc.
     - iosname: The I/O scope name of the property. Typically the same as 'sname', but may may be
                different to the functional scope in case of some MSR-backed properties. More
-               information: docs/misc-msr-scope.md
+               information: https://github.com/dedekind/dedekind-share/blob/master/2025/msr-scope.md
     - core siblings: All CPUs sharing the same core. For example, "CPU6 core siblings" are all CPUs
                      sharing the same core as CPU 6.
     - module siblings: All CPUs sharing the same module.

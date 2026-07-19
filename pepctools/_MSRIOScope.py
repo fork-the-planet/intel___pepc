@@ -9,8 +9,9 @@
 #          Niklas Neronin <niklas.neronin@intel.com>
 
 """
-Detect I/O scope of a writable Model-Specific Register (MSR). Refer to 'docs/misc-msr-scope.md' for
-more information about MSR I/O scope.
+Detect I/O scope of a writable Model-Specific Register (MSR). Refer to
+https://github.com/dedekind/dedekind-share/blob/master/2025/msr-scope.md for more information about
+MSR I/O scope.
 """
 
 from __future__ import annotations # Remove when switching to Python 3.10+.
@@ -469,7 +470,8 @@ def _build_arguments_parser() -> ArgParse.ArgsParser:
     """
 
     text = f"""{_TOOLNAME} - detect I/O scope of a writable Model-Specific Register (MSR). Refer
-               to 'docs/misc-msr-scope.md' for more information about MSR I/O scope."""
+               to https://github.com/dedekind/dedekind-share/blob/master/2025/msr-scope.md for more
+               information about MSR I/O scope."""
     parser = ArgParse.ArgsParser(description=text, prog=_TOOLNAME, ver=_VERSION)
     ArgParse.add_ssh_options(parser)
 

@@ -93,7 +93,7 @@ mechanisms,
 because the minimum uncore frequency is supposed to be the same when read via sysfs or TPMI.
 
 **Note:** The difference between CPPC and HWP guaranteed performance levels is explained in the
-[Intel CPU Base Frequency Explained](misc-cpu-base-freq.md) article.
+[Intel CPU Base Frequency Explained](https://github.com/dedekind/dedekind-share/blob/master/2026/cpu-base-freq.md) article.
 
 ### Getting Help
 

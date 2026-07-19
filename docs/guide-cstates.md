@@ -98,7 +98,7 @@ other hand, the 'pepc uncore info --min-freq' option supports both 'sysfs' and '
 because the minimum uncore frequency is supposed to be the same when read via sysfs or TPMI.
 
 **Note:** The difference between CPPC and HWP guaranteed performance levels is explained in the
-[Intel CPU Base Frequency Explained](misc-cpu-base-freq.md) article.
+[Intel CPU Base Frequency Explained](https://github.com/dedekind/dedekind-share/blob/master/2026/cpu-base-freq.md) article.
 
 ### Getting Help
 
@@ -180,7 +180,7 @@ The `pepc pstates` command groups operations related to CPU performance states (
 example, it supports reading and changing CPU frequency limits.
 
 If you are new to Intel CPU P-states, the
-[Intel CPU Base Frequency Explained](misc-cpu-base-freq.md)
+[Intel CPU Base Frequency Explained](https://github.com/dedekind/dedekind-share/blob/master/2026/cpu-base-freq.md)
 article explains many concepts related to CPU performance scaling.
 
 ### Examples
@@ -337,8 +337,8 @@ demotion" feature.
 If you are new to Linux and Intel CPU C-states, the following articles available in the `pepc` repository
 may be helpful:
 
-- [Intel C-state namespaces](misc-cstate-namespaces.md) - explains C-state naming conventions.
-- [Xeon C6P and C6SP Idle States](misc-c6p-c6sp.md) - explains the C6P and C6SP idle states on
+- [Intel C-state namespaces](https://github.com/dedekind/dedekind-share/blob/master/2025/cstate-namespaces.md) - explains C-state naming conventions.
+- [Xeon C6P and C6SP Idle States](https://github.com/dedekind/dedekind-share/blob/master/2025/c6p-c6sp.md) - explains the C6P and C6SP idle states on
   Intel Xeon platforms.
 
 ### Examples
@@ -456,7 +456,7 @@ example, it typically includes components like the last level cache (LLC), memor
 north complex interconnects (e.g., between cores).
 
 Some concepts related to uncore frequency scaling and the ELC (Efficiency Latency Control) feature
-are explained in [Uncore ELC and Frequency Scaling](misc-uncore-elc.md).
+are explained in [Uncore ELC and Frequency Scaling](https://github.com/dedekind/dedekind-share/blob/master/2025/uncore-elc.md).
 
 ### Uncore Frequency and Dies
 
@@ -577,7 +577,7 @@ Non-compute dies do not contain CPUs. The `pepc` tool enumerates them via TPMI a
 **Additional Examples**
 
 For more examples related to uncore frequency scaling and ELC configuration, refer to
-the [Uncore ELC and Frequency Scaling](misc-uncore-elc.md) article.
+the [Uncore ELC and Frequency Scaling](https://github.com/dedekind/dedekind-share/blob/master/2025/uncore-elc.md) article.
 
 ## CPU Hotplug
 

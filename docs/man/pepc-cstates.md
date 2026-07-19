@@ -154,7 +154,7 @@ target CPU specification options to define a subset of CPUs, cores, dies, or pac
     Use 'all' to include all available Linux C-states (default). Linux C-states (e.g., C6) are
     requests Linux can make, while hardware C-states (e.g., Core C6 or Package C6 on Intel
     platforms) are platform-specific states entered upon such requests. See
-    https://github.com/intel/pepc/blob/main/docs/misc-cstate-namespaces.md for details. Reads
+    https://github.com/dedekind/dedekind-share/blob/master/2025/cstate-namespaces.md for details. Reads
     C-state information from `/sys/devices/system/cpu/cpu<N>/cpuidle/state<M>/`.
 
 **--pkg-cstate-limit**
@@ -230,7 +230,7 @@ packages.
 :   A comma-separated list of C-state names to enable. Use 'all' to include all available Linux
     C-states (default). Linux C-states (e.g., C6) are requests Linux can make, while hardware
     C-states (e.g., Core C6 or Package C6 on Intel platforms) are platform-specific states entered
-    upon such requests. See https://github.com/intel/pepc/blob/main/docs/misc-cstate-namespaces.md
+    upon such requests. See https://github.com/dedekind/dedekind-share/blob/master/2025/cstate-namespaces.md
     for details. Enables a C-state by writing '0' to
     `/sys/devices/system/cpu/cpu<N>/cpuidle/state<M>/disable`.
 

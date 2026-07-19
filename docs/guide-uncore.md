@@ -41,7 +41,7 @@ example, it typically includes components like the last level cache (LLC), memor
 north complex interconnects (e.g., between cores).
 
 Some concepts related to uncore frequency scaling and the ELC (Efficiency Latency Control) feature
-are explained in [Uncore ELC and Frequency Scaling](misc-uncore-elc.md).
+are explained in [Uncore ELC and Frequency Scaling](https://github.com/dedekind/dedekind-share/blob/master/2025/uncore-elc.md).
 
 ## Uncore Frequency Control Mechanisms
 
@@ -189,7 +189,7 @@ For information about die IDs and how they are assigned, see the
 ### ELC Examples
 
 For more examples related to uncore frequency scaling and ELC configuration, refer to
-the [Uncore ELC and Frequency Scaling](misc-uncore-elc.md) article.
+the [Uncore ELC and Frequency Scaling](https://github.com/dedekind/dedekind-share/blob/master/2025/uncore-elc.md) article.
 
 ## CPU Hotplug
 

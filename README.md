@@ -12,17 +12,20 @@ Author: Artem Bityutskiy <artem.bityutskiy@linux.intel.com>
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Disclaimer](#disclaimer)
-- [Privileges](#privileges)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [User Guide](#user-guide)
-- [Repository Tools](#repository-tools)
-- [Contributing](#contributing)
-- [Man pages](#man-pages)
-- [Helpful resources](#helpful-resources)
-- [FAQ](#faq)
+- [pepc](#pepc)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Disclaimer](#disclaimer)
+  - [Privileges](#privileges)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [User Guide](#user-guide)
+  - [Repository Tools](#repository-tools)
+  - [Contributing](#contributing)
+  - [Man pages](#man-pages)
+  - [Helpful resources](#helpful-resources)
+  - [FAQ](#faq)
+    - [What to do if my platform is not supported?](#what-to-do-if-my-platform-is-not-supported)
 
 ## Introduction
 
@@ -77,7 +80,7 @@ must be run from the repository.
   [Tests Guide](docs/guide-tests.md).
 - `tools/msr-ioscope`: determines the I/O scope (package, die, core, CPU) of MSR bits on a real
   system.
-  See [MSR Scope](docs/misc-msr-scope.md).
+  See [MSR Scope](https://github.com/dedekind/dedekind-share/blob/master/2025/msr-scope.md).
 - `tools/make-standalone`: packages `pepc` and its dependencies into a single standalone executable.
 - `tools/tpmi-spec-files-generator`: generates TPMI specification XML files from raw data.
 - `tools/make-a-release`: prepares a new `pepc` release (changelog, version bump, commit, tag).
@@ -106,23 +109,17 @@ Some features are hardware-agnostic, while others depend on specific hardware ca
 
 ## Helpful resources
 
-- [Intel CPU Base Frequency Explained](docs/misc-cpu-base-freq.md) - explains the concept of CPU base
-  frequency and many CPU performance scaling topics.
-- [Intel C-state namespaces](docs/misc-cstate-namespaces.md) - explains C-state naming conventions.
-- [Xeon C6P and C6SP Idle States](docs/misc-c6p-c6sp.md) - explains the C6P and C6SP idle states on
-  Intel Xeon platforms.
+- [Intel CPU Base Frequency Explained](https://github.com/dedekind/dedekind-share/blob/master/2026/cpu-base-freq.md):
+  explains the concept of CPU base frequency and many CPU performance scaling topics.
+- [Intel C-state namespaces](https://github.com/dedekind/dedekind-share/blob/master/2025/cstate-namespaces.md):
+  explains C-state naming conventions.
+- [Xeon C6P and C6SP Idle States](https://github.com/dedekind/dedekind-share/blob/master/2025/c6p-c6sp.md):
+  explains the C6P and C6SP idle states on Intel Xeon platforms.
 
-- [Uncore ELC and Frequency Scaling](docs/misc-uncore-elc.md) - explains the uncore ELC mechanism.
-- [MSR scope](docs/misc-msr-scope.md) - explains the concept of MSR scope (per-core, per-module,
-  per-package) and related pitfalls.
-
-The following articles are not directly related to `pepc`, but may be helpful to understand some of
-the features `pepc` manages.
-
-- [Measured CPU Frequency and C-states](docs/misc-c1e-cpu-freq.md) - explains why measured CPU
-  frequency may be lower than expected when C1E or deeper C-states are enabled.
-- [TSC, APERF, and MPERF Counters](docs/misc-tsc-amperf.md) - explains the TSC, APERF, and MPERF
-  counters and their interaction.
+- [Uncore ELC and Frequency Scaling](https://github.com/dedekind/dedekind-share/blob/master/2025/uncore-elc.md):
+  explains the uncore ELC mechanism.
+- [MSR scope](https://github.com/dedekind/dedekind-share/blob/master/2025/msr-scope.md):
+  explains the concept of MSR scope (per-core, per-module, per-package) and related pitfalls.
 
 ## FAQ
 

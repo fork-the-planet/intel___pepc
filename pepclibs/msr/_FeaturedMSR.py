@@ -15,7 +15,7 @@ Terminology:
         per-CPU, per-core, per-package, etc.
     - MSR feature I/O scope (iosname): The I/O scope of the feature. Typically the same as the
         functional scope, but may be different for some MSRs. More information:
-        https://github.com/intel/pepc/blob/main/docs/misc-msr-scope.md
+        https://github.com/dedekind/dedekind-share/blob/master/2025/msr-scope.md
 """
 
 from __future__ import annotations # Remove when switching to Python 3.10+.
